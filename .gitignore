@@ -1,0 +1,11 @@
+# Local Git-history backup made when folding FedBiF into this repository.
+/.repo-backups/
+
+# Python environments and generated caches.
+.venv/
+__pycache__/
+*.py[cod]
+.mplconfig/
+
+# Original source copies saved by the repair script.
+*.bak

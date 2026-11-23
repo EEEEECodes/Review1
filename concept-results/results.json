@@ -1,0 +1,161 @@
+﻿{
+    "scope":  "PowerShell numerical concept demo of plugin/bif.py; not original Python execution or ML training",
+    "seed":  1234,
+    "weights":  16,
+    "quantization_bits":  4,
+    "selected_trainable_bit_zero_based":  2,
+    "quantization_step":  0.01875,
+    "reconstructed_correctly":  16,
+    "weights_with_selected_bit_changed":  8,
+    "weights_with_all_other_bits_preserved":  16,
+    "max_quantization_absolute_error":  0.018750000000000017,
+    "elapsed_ms":  734.07,
+    "training_accuracy":  null,
+    "measured_network_savings":  null,
+    "details":  [
+                    {
+                        "original_weight":  -0.15,
+                        "quantized_integer":  0,
+                        "reconstructed_weight":  -0.15,
+                        "quantization_absolute_error":  0,
+                        "updated_integer":  4,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  -0.13,
+                        "quantized_integer":  1,
+                        "reconstructed_weight":  -0.13125,
+                        "quantization_absolute_error":  0.0012500000000000011,
+                        "updated_integer":  1,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  -0.11,
+                        "quantized_integer":  2,
+                        "reconstructed_weight":  -0.1125,
+                        "quantization_absolute_error":  0.0024999999999999883,
+                        "updated_integer":  6,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  -0.09,
+                        "quantized_integer":  4,
+                        "reconstructed_weight":  -0.075,
+                        "quantization_absolute_error":  0.015,
+                        "updated_integer":  4,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  -0.07,
+                        "quantized_integer":  4,
+                        "reconstructed_weight":  -0.075,
+                        "quantization_absolute_error":  0.0049999999999999906,
+                        "updated_integer":  0,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  -0.05,
+                        "quantized_integer":  6,
+                        "reconstructed_weight":  -0.0375,
+                        "quantization_absolute_error":  0.012500000000000011,
+                        "updated_integer":  6,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  -0.03,
+                        "quantized_integer":  7,
+                        "reconstructed_weight":  -0.01875,
+                        "quantization_absolute_error":  0.011249999999999996,
+                        "updated_integer":  3,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  -0.01,
+                        "quantized_integer":  7,
+                        "reconstructed_weight":  -0.01875,
+                        "quantization_absolute_error":  0.0087500000000000026,
+                        "updated_integer":  7,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  0.01,
+                        "quantized_integer":  9,
+                        "reconstructed_weight":  0.01875,
+                        "quantization_absolute_error":  0.0087499999999999887,
+                        "updated_integer":  13,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  0.03,
+                        "quantized_integer":  9,
+                        "reconstructed_weight":  0.01875,
+                        "quantization_absolute_error":  0.01125000000000001,
+                        "updated_integer":  9,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  0.05,
+                        "quantized_integer":  11,
+                        "reconstructed_weight":  0.05625,
+                        "quantization_absolute_error":  0.0062499999999999917,
+                        "updated_integer":  15,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  0.07,
+                        "quantized_integer":  12,
+                        "reconstructed_weight":  0.075,
+                        "quantization_absolute_error":  0.0049999999999999906,
+                        "updated_integer":  12,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  0.09,
+                        "quantized_integer":  13,
+                        "reconstructed_weight":  0.09375,
+                        "quantization_absolute_error":  0.0037499999999999895,
+                        "updated_integer":  9,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  0.11,
+                        "quantized_integer":  14,
+                        "reconstructed_weight":  0.1125,
+                        "quantization_absolute_error":  0.0025000000000000022,
+                        "updated_integer":  14,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  0.13,
+                        "quantized_integer":  15,
+                        "reconstructed_weight":  0.13125,
+                        "quantization_absolute_error":  0.0012499999999999734,
+                        "updated_integer":  11,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    },
+                    {
+                        "original_weight":  0.15,
+                        "quantized_integer":  15,
+                        "reconstructed_weight":  0.13125,
+                        "quantization_absolute_error":  0.018750000000000017,
+                        "updated_integer":  15,
+                        "frozen_bits_preserved":  true,
+                        "reconstruction_correct":  true
+                    }
+                ]
+}

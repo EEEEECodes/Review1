@@ -1,0 +1,112 @@
+{
+  "status": "completed",
+  "benchmark": "CPU synthetic smoke test",
+  "scope": "Generated left/right stripe images; accuracy is synthetic only. No real-dataset or network-savings measurements.",
+  "python_version": "3.11.9",
+  "torch_version": "2.2.0+cpu",
+  "repo": "C:\\Users\\User\\E\\Review1\\fedbif-tpds25",
+  "sources": {
+    "bif": "C:\\Users\\User\\E\\Review1\\fedbif-tpds25\\plugin\\bif.py",
+    "trainer": "C:\\Users\\User\\E\\Review1\\fedbif-tpds25\\train\\trainer.py"
+  },
+  "settings": {
+    "rounds": 4,
+    "clients": 2,
+    "samples": 256,
+    "test_samples": 128,
+    "epochs": 1,
+    "batch_size": 32,
+    "bits": 4,
+    "lr": 0.2,
+    "threads": 1,
+    "seed": 2026
+  },
+  "checks": {
+    "zero_quantization": "passed",
+    "straight_through_gradient": "passed",
+    "exact_reconstruction_cases": 64,
+    "single_bit_flip_cases": 64,
+    "local_nonselected_bits_preserved": "passed",
+    "checked_client_weights": 288,
+    "client_updates_with_nonzero_final_virtual_gradient": 8,
+    "identical_initial_outputs": true
+  },
+  "methods": {
+    "fedavg": {
+      "initial": {
+        "loss": 0.6940204501152039,
+        "synthetic_accuracy": 0.453125
+      },
+      "final": {
+        "round": 4,
+        "loss": 0.02020854875445366,
+        "synthetic_accuracy": 1.0
+      },
+      "history": [
+        {
+          "round": 1,
+          "loss": 0.5404359996318817,
+          "synthetic_accuracy": 1.0
+        },
+        {
+          "round": 2,
+          "loss": 0.14572707936167717,
+          "synthetic_accuracy": 1.0
+        },
+        {
+          "round": 3,
+          "loss": 0.04042582958936691,
+          "synthetic_accuracy": 1.0
+        },
+        {
+          "round": 4,
+          "loss": 0.02020854875445366,
+          "synthetic_accuracy": 1.0
+        }
+      ],
+      "loss_decreased": true,
+      "runtime_seconds": 2.1914
+    },
+    "fedbif": {
+      "initial": {
+        "loss": 0.6940204501152039,
+        "synthetic_accuracy": 0.453125
+      },
+      "final": {
+        "round": 4,
+        "loss": 0.010341220302507281,
+        "synthetic_accuracy": 1.0,
+        "selected_bit": 0
+      },
+      "history": [
+        {
+          "round": 1,
+          "loss": 0.1335333175957203,
+          "synthetic_accuracy": 1.0,
+          "selected_bit": 3
+        },
+        {
+          "round": 2,
+          "loss": 0.04121163301169872,
+          "synthetic_accuracy": 1.0,
+          "selected_bit": 2
+        },
+        {
+          "round": 3,
+          "loss": 0.019268931820988655,
+          "synthetic_accuracy": 1.0,
+          "selected_bit": 1
+        },
+        {
+          "round": 4,
+          "loss": 0.010341220302507281,
+          "synthetic_accuracy": 1.0,
+          "selected_bit": 0
+        }
+      ],
+      "loss_decreased": true,
+      "runtime_seconds": 0.2558
+    }
+  },
+  "runtime_seconds": 6.9337
+}
